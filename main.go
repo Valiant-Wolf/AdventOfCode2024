@@ -1,17 +1,16 @@
 package main
 
 import (
+	"aoc24/challenges"
 	"fmt"
 	"os"
 )
-
-var Commands = make(map[string]func() error)
 
 func main() {
 
 	cmdStr := os.Args[1]
 
-	cmd := Commands[cmdStr]
+	cmd := challenges.Challenges[cmdStr]
 	if cmd == nil {
 		fmt.Printf("'%s' is not a valid command\n", cmdStr)
 		return

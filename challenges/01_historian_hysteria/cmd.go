@@ -1,4 +1,4 @@
-package main
+package _1_historian_hysteria
 
 import (
 	"aoc24/intmath"
@@ -9,13 +9,8 @@ import (
 	"strings"
 )
 
-//go:embed input/01.txt
+//go:embed input.txt
 var input string
-
-func init() {
-	Commands["01a"] = a
-	Commands["01b"] = b
-}
 
 func readLists() (left []int, right []int) {
 	// for each line in the input
@@ -35,7 +30,7 @@ func readLists() (left []int, right []int) {
 	return
 }
 
-func a() error {
+func A() error {
 	// read input into slices
 	left, right := readLists()
 
@@ -56,7 +51,7 @@ func a() error {
 	return nil
 }
 
-func b() error {
+func B() error {
 	// read input into slices
 	left, right := readLists()
 
