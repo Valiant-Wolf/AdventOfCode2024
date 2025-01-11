@@ -1,5 +1,7 @@
 package intmath
 
+import "strconv"
+
 func Abs(val int) int {
 	return max(val, -val)
 }
@@ -13,4 +15,8 @@ func Sign(val int) int {
 	default:
 		return 1
 	}
+}
+
+func Digits(val int) int {
+	return len(strconv.Itoa(Abs(val)))
 }
