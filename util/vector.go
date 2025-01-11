@@ -1,5 +1,7 @@
 package util
 
+import "fmt"
+
 // A Vector represents a pair of integer dimensions.
 type Vector struct {
 	X int
@@ -12,4 +14,8 @@ func (v Vector) Add(addend Vector) Vector {
 
 func (v Vector) Sub(subtrahend Vector) Vector {
 	return Vector{v.X - subtrahend.X, v.Y - subtrahend.Y}
+}
+
+func (v Vector) String() string {
+	return fmt.Sprintf("(%d, %d)", v.X, v.Y)
 }
