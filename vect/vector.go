@@ -16,6 +16,10 @@ func (v Vector) Sub(subtrahend Vector) Vector {
 	return Vector{v.X - subtrahend.X, v.Y - subtrahend.Y}
 }
 
+func (v Vector) Mul(multiplicand int) Vector {
+	return Vector{v.X * multiplicand, v.Y * multiplicand}
+}
+
 func (v Vector) String() string {
 	return fmt.Sprintf("(%d, %d)", v.X, v.Y)
 }

@@ -13,6 +13,7 @@ import (
 	day10 "aoc24/challenges/10_hoof_it"
 	day11 "aoc24/challenges/11_plutonian_pebbles"
 	day12 "aoc24/challenges/12_garden_groups"
+	day13 "aoc24/challenges/13_claw_contraption"
 )
 
 var Challenges = make(map[string]func() error)
@@ -42,4 +43,6 @@ func init() {
 	Challenges["11b"] = day11.B
 	Challenges["12a"] = day12.A
 	Challenges["12b"] = day12.B
+	Challenges["13a"] = day13.A
+	Challenges["13b"] = day13.B
 }
