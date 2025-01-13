@@ -2,6 +2,7 @@ package _8_resonant_collinearity
 
 import (
 	. "aoc24/util"
+	. "aoc24/vect"
 	_ "embed"
 	"fmt"
 	"strings"

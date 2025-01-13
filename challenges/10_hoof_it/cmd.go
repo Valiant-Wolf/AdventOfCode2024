@@ -2,6 +2,7 @@ package _0_hoof_it
 
 import (
 	. "aoc24/util"
+	. "aoc24/vect"
 	_ "embed"
 	"fmt"
 	"strings"

@@ -1,4 +1,4 @@
-package util
+package vect
 
 import "fmt"
 
@@ -18,4 +18,20 @@ func (v Vector) Sub(subtrahend Vector) Vector {
 
 func (v Vector) String() string {
 	return fmt.Sprintf("(%d, %d)", v.X, v.Y)
+}
+
+func Up() Vector {
+	return Vector{0, -1}
+}
+
+func Down() Vector {
+	return Vector{0, 1}
+}
+
+func Left() Vector {
+	return Vector{-1, 0}
+}
+
+func Right() Vector {
+	return Vector{1, 0}
 }
